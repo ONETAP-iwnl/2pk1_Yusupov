@@ -15,19 +15,25 @@ namespace pz_6
             int a1 = 0;
             int a2 = 1;
             int n = 1;
-            while (a == 0)
+            int sum;
+            int res = -1;
+            while (a1 <= a)
             {
-                Console.WriteLine(0);
-                if (a2 <= a)
+                sum = a1 + a2;
+                a1= a2;
+                a2 = sum;
+                n += 1;
+                if (a1 == a)
                 {
-                    if (a1 <= a)
-                        Console.WriteLine(n);
+                    res = n;
                     
-                    n += 1;
-                    Console.WriteLine(n);
-                }    
-                else
-                    Console.WriteLine(-1);
+                }
+                else if (a == 0)
+                {
+                    res = 0;
+                    Console.WriteLine(res);
+                }
+                Console.WriteLine(n);
             }
             Console.ReadKey();
 
