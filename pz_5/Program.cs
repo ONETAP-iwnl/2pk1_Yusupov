@@ -50,11 +50,11 @@ namespace pz_5
 
             //задание 5
 
-            //for (int i = 0, j = 30; i + j <= 8; i++, j--)
-            //{
-            //    Console.WriteLine(i + "     " + j);
-            //}
-            //Console.ReadKey();  
+            for (int i = 0, j = 30; i - j != 8; i++, j--)
+            {
+                Console.WriteLine(i + "     " + j);
+            }
+            Console.ReadKey();  
         }
     }
 }
